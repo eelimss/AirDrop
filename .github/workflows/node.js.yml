@@ -16,7 +16,9 @@ jobs:
         with:
           node-version: "17.1.0"
       - name: Install packages
-        run: npm ci
+        run: npm i
+      - name: Update packages
+        run: npm update
       - name: Run Lint
         run: npm run lint
       - name: Run tests
