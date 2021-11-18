@@ -11,15 +11,16 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "@openzeppelin/test-helpers": "^0.5.13",
+    "chai": "^4.3.4"
+  },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.3.3",
-    "@openzeppelin/test-helpers": "^0.5.15",
     "bn.js": "^5.2.0",
-    "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "chai-bn": "^0.3.0",
-    "dotenv": "^10.0.0",
-    "solhint": "^3.3.6",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "solidity-coverage": "^0.7.17",
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.3.10"
   }
-}
