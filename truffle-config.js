@@ -24,9 +24,9 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
-let HDWalletProvider = require("truffle-hdwallet-provider");
-const dotenv = require('dotenv');
-dotenv.config();
+// let HDWalletProvider = require("truffle-hdwallet-provider");
+// const dotenv = require('dotenv');
+// dotenv.config();
 
 
 module.exports = {
@@ -78,14 +78,14 @@ module.exports = {
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
 
-      rinkeby: {
-      provider: function () {
-        return new HDWalletProvider([process.env.PRIVATE_KEY], `https://rinkeby.infura.io/v3/${process.env.PROJECT_ID}`)
-      }, 
-      network_id: 4,  
-      gas: 4000000,
-      gasPrice: 21000000000
-    }, 
+//       rinkeby: {
+//       provider: function () {
+//         return new HDWalletProvider([process.env.PRIVATE_KEY], `https://rinkeby.infura.io/v3/${process.env.PROJECT_ID}`)
+//       }, 
+//       network_id: 4,  
+//       gas: 4000000,
+//       gasPrice: 21000000000
+//     }, 
   },
 
   api_keys: {
@@ -93,8 +93,7 @@ module.exports = {
   },
   
   plugins: [
-    "solidity-coverage", 
-    'truffle-plugin-verify'],
+    "solidity-coverage"],
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
