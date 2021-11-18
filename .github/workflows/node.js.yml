@@ -14,10 +14,8 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: "17.1.0"
+          node-version: "16.x"
       - name: Install packages
         run: npm ci
-      - name: Run Lint
-        run: npm run lint
       - name: Run tests
         run: npm run coverage
